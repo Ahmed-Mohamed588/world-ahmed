@@ -1,0 +1,46 @@
+{
+  "name": "world-ahmed",
+  "version": "1.0.0",
+  "description": "Ahmed's modern portfolio with marketplace functionality",
+  "author": "Ahmed Mohamed",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@heroicons/react": "^2.0.18",
+    "framer-motion": "^10.16.16",
+    "react-intersection-observer": "^9.5.3",
+    "react-hot-toast": "^2.4.1",
+    "aos": "^2.3.4",
+    "react-typed": "^1.2.0",
+    "lottie-react": "^2.4.0",
+    "three": "^0.159.0",
+    "@react-three/fiber": "^8.15.12",
+    "@react-three/drei": "^9.92.7",
+    "lucide-react": "^0.303.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
+  },
+  "keywords": [
+    "portfolio",
+    "nextjs",
+    "tailwindcss",
+    "marketplace",
+    "modern",
+    "animation",
+    "3d",
+    "framer-motion"
+  ]
+}
