@@ -9,34 +9,37 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Ahmed's Portfolio Color Palette (من الصورة)
         primary: {
           50: '#eff6ff',
           100: '#dbeafe',
           200: '#bfdbfe',
           300: '#93c5fd',
           400: '#60a5fa',
-          500: '#3b82f6',
+          500: '#3b82f6', // Main blue from button
           600: '#2563eb',
           700: '#1d4ed8',
           800: '#1e40af',
           900: '#1e3a8a',
           950: '#172554',
         },
+        // الألوان الداكنة من التصميم
         dark: {
           50: '#f8fafc',
           100: '#f1f5f9',
           200: '#e2e8f0',
           300: '#cbd5e1',
-          400: '#94a3b8',
+          400: '#94a3b8', // النص الفاتح
           500: '#64748b',
           600: '#475569',
-          700: '#334155',
-          800: '#1e293b',
-          900: '#0f172a',
+          700: '#334155', // خلفية الكروت
+          800: '#1e293b', // خلفية ثانوية
+          900: '#0f172a', // الخلفية الرئيسية
           950: '#020617',
         },
+        // ألوان إضافية للتأثيرات
         accent: {
-          blue: '#4299e1',
+          blue: '#4299e1', // الأزرق من الصورة
           'blue-light': '#63b3ed',
           'blue-dark': '#3182ce',
         },
@@ -71,6 +74,7 @@ module.exports = {
         '128': '32rem',
       },
       animation: {
+        // انيميشنز احترافية
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'fade-in-up': 'fadeInUp 0.6s ease-out',
         'fade-in-down': 'fadeInDown 0.6s ease-out',
@@ -162,7 +166,7 @@ module.exports = {
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'dark-gradient': 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
         'blue-gradient': 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
-        'hero-pattern': 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%233b82f6\' fill-opacity=\'0.05\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'2\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+        'hero-pattern': 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%233b82f6" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
         'mesh-gradient': 'radial-gradient(at 40% 20%, hsla(228,100%,74%,1) 0px, transparent 50%), radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%), radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%)',
       },
       boxShadow: {
@@ -180,6 +184,10 @@ module.exports = {
         'bounce-in': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
         'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
+      perspective: {
+        '1000': '1000px',
+        '1500': '1500px',
+      },
     },
   },
   plugins: [
@@ -192,14 +200,14 @@ module.exports = {
           textShadow: '3px 3px 6px rgba(0,0,0,0.2)',
         },
         '.backface-hidden': {
-          backfaceVisibility: 'hidden',
+          'backface-visibility': 'hidden',
         },
         '.transform-gpu': {
           transform: 'translateZ(0)',
         },
         '.scrollbar-hide': {
-          msOverflowStyle: 'none',
-          scrollbarWidth: 'none',
+          '-ms-overflow-style': 'none',
+          'scrollbar-width': 'none',
           '&::-webkit-scrollbar': {
             display: 'none',
           },
@@ -208,10 +216,10 @@ module.exports = {
           perspective: '1000px',
         },
         '.preserve-3d': {
-          transformStyle: 'preserve-3d',
+          'transform-style': 'preserve-3d',
         },
-      };
-      addUtilities(newUtilities, ['responsive', 'hover']);
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
     },
   ],
-};
+}
